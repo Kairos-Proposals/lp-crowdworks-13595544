@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kairosからのご提案｜みより2026様 HP修正＋ロゴ仕上げ</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&family=Zen+Kaku+Gothic+New:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --forest:#15302A;
+    --mid-green:#2F6B4F;
+    --accent-yg:#8FBF4D;
+    --paper:#F5F6F0;
+    --ink:#233327;
+    --gold:#C98A3A;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:'Zen Kaku Gothic New', sans-serif;
+    background:var(--paper);
+    color:var(--ink);
+    line-height:1.85;
+    overflow-x:hidden;
+  }
+  h1,h2,h3{
+    font-family:'Shippori Mincho', serif;
+    color:var(--forest);
+    letter-spacing:.04em;
+  }
+  .wrap{
+    max-width:1080px;
+    margin:0 auto;
+    padding:0 24px;
+  }
+  a{color:inherit;}
+
+  /* ===== HERO ===== */
+  .hero{
+    position:relative;
+    background:linear-gradient(160deg,#15302A 0%,#1E4536 55%,#2F6B4F 100%);
+    color:#F5F6F0;
+    padding:90px 0 110px;
+    overflow:hidden;
+  }
+  .hero::before{
+    content:"";
+    position:absolute;
+    right:-120px;
+    top:-80px;
+    width:420px;
+    height:420px;
+    border-radius:50%;
+    background:radial-gradient(circle at 30% 30%, rgba(143,191,77,.35), transparent 70%);
+  }
+  .hero-mark{
+    position:absolute;
+    right:40px;
+    bottom:-60px;
+    width:260px;
+    height:260px;
+    opacity:.9;
+  }
+  .hero-mark .poly{
+    position:absolute;
+    inset:0;
+    clip-path:polygon(50% 2%, 95% 27%, 95% 73%, 50% 98%, 5% 73%, 5% 27%);
+    background:linear-gradient(135deg,#8FBF4D,#3E7A5D 70%);
+    opacity:.85;
+  }
+  .hero-mark .poly2{
+    position:absolute;
+    inset:38px;
+    clip-path:polygon(50% 2%, 95% 27%, 95% 73%, 50% 98%, 5% 73%, 5% 27%);
+    background:var(--forest);
+  }
+  .kairos-tag{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    font-size:13px;
+    letter-spacing:.18em;
+    padding:7px 16px;
+    border:1px solid rgba(245,246,240,.5);
+    border-radius:999px;
+    margin-bottom:28px;
+    color:#D9E4C9;
+  }
+  .kairos-tag span.dot{
+    width:7px;height:7px;border-radius:50%;background:var(--accent-yg);
+    display:inline-block;
+  }
+  .hero h1{
+    color:#F5F6F0;
+    font-size:clamp(28px,4.4vw,46px);
+    line-height:1.6;
+    max-width:720px;
+    font-weight:700;
+  }
+  .hero h1 em{
+    font-style:normal;
+    color:var(--accent-yg);
+  }
+  .hero p.lead{
+    margin-top:26px;
+    max-width:560px;
+    color:#D9E4C9;
+    font-size:15.5px;
+  }
+  .hero .client-line{
+    margin-top:46px;
+    font-size:13.5px;
+    color:#B9C7A8;
+    letter-spacing:.05em;
+  }
+
+  /* ===== SECTION COMMON ===== */
+  section{
+    padding:86px 0;
+  }
+  .section-label{
+    font-size:12.5px;
+    letter-spacing:.22em;
+    color:var(--mid-green);
+    font-weight:700;
+    margin-bottom:14px;
+  }
+  .section-title{
+    font-size:clamp(22px,3vw,32px);
+    margin-bottom:18px;
+  }
+  .section-sub{
+    color:#4A5A4C;
+    max-width:640px;
+    font-size:15px;
+    margin-bottom:46px;
+  }
+
+  /* ===== UNDERSTANDING ===== */
+  .understand{
+    background:#FFFFFF;
+    border-top:1px solid #E3E6DA;
+    border-bottom:1px solid #E3E6DA;
+  }
+  .understand-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+  }
+  .understand-quote{
+    background:linear-gradient(135deg,#F0F3E6,#E4EDD6);
+    border-left:4px solid var(--accent-yg);
+    padding:28px 30px;
+    border-radius:4px;
+    font-family:'Shippori Mincho', serif;
+    font-size:17px;
+    color:var(--forest);
+    line-height:2;
+  }
+  .understand-list{
+    list-style:none;
+  }
+  .understand-list li{
+    position:relative;
+    padding-left:26px;
+    margin-bottom:18px;
+    font-size:14.5px;
+    color:#3A473C;
+  }
+  .understand-list li::before{
+    content:"";
+    position:absolute;
+    left:0;
+    top:8px;
+    width:9px;height:9px;
+    background:var(--mid-green);
+    border-radius:2px;
+    transform:rotate(45deg);
+  }
+  .understand-list li b{
+    color:var(--forest);
+  }
+
+  /* ===== VALUE CARDS ===== */
+  .value-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:26px;
+  }
+  .value-card{
+    background:#fff;
+    border:1px solid #E3E6DA;
+    border-radius:10px;
+    padding:30px 26px;
+    position:relative;
+    overflow:hidden;
+    transition:transform .25s ease, box-shadow .25s ease;
+  }
+  .value-card:hover{
+    transform:translateY(-4px);
+    box-shadow:0 14px 30px -14px rgba(21,48,42,.3);
+  }
+  .value-card .num{
+    font-family:'Shippori Mincho', serif;
+    font-size:13px;
+    color:var(--accent-yg);
+    letter-spacing:.1em;
+    display:block;
+    margin-bottom:10px;
+  }
+  .value-card h3{
+    font-size:17px;
+    margin-bottom:10px;
+  }
+  .value-card p{
+    font-size:13.6px;
+    color:#51604F;
+  }
+  .value-card::after{
+    content:"";
+    position:absolute;
+    width:70px;height:70px;
+    right:-20px;bottom:-20px;
+    background:radial-gradient(circle,rgba(143,191,77,.18),transparent 70%);
+    border-radius:50%;
+  }
+
+  /* ===== LOGO SHOWCASE STRIP ===== */
+  .logo-strip{
+    background:var(--forest);
+    color:#EFF3E6;
+    padding:60px 0;
+  }
+  .logo-strip .wrap{
+    display:flex;
+    align-items:center;
+    gap:50px;
+    flex-wrap:wrap;
+  }
+  .logo-demo{
+    display:flex;
+    gap:22px;
+    align-items:center;
+  }
+  .logo-chip{
+    width:88px;height:88px;
+    border-radius:16px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    position:relative;
+  }
+  .logo-chip.c1{background:#FFFFFF08;border:1px dashed rgba(255,255,255,.3);}
+  .logo-chip.c2{background:linear-gradient(135deg,#8FBF4D,#2F6B4F);}
+  .logo-chip.c3{background:#fff;}
+  .logo-chip.c4{background:#0D1F18;}
+  .logo-chip .m{
+    width:40px;height:40px;
+    clip-path:polygon(50% 2%, 95% 27%, 95% 73%, 50% 98%, 5% 73%, 5% 27%);
+  }
+  .logo-chip.c1 .m{background:rgba(255,255,255,.25);}
+  .logo-chip.c2 .m{background:#15302A;}
+  .logo-chip.c3 .m{background:linear-gradient(135deg,#8FBF4D,#2F6B4F);}
+  .logo-chip.c4 .m{background:#8FBF4D;}
+  .logo-strip-text h3{
+    color:#EFF3E6;
+    font-size:19px;
+    margin-bottom:8px;
+  }
+  .logo-strip-text p{
+    font-size:13.5px;
+    color:#C5D1B8;
+    max-width:460px;
+  }
+
+  /* ===== SCHEDULE ===== */
+  .timeline{
+    position:relative;
+    padding-left:4px;
+  }
+  .timeline-item{
+    display:grid;
+    grid-template-columns:120px 1fr;
+    gap:24px;
+    padding:26px 0;
+    border-bottom:1px solid #E3E6DA;
+  }
+  .timeline-item:last-child{border-bottom:none;}
+  .timeline-week{
+    font-family:'Shippori Mincho', serif;
+    font-size:15px;
+    color:var(--mid-green);
+    font-weight:700;
+  }
+  .timeline-body h3{
+    font-size:16.5px;
+    margin-bottom:6px;
+  }
+  .timeline-body p{
+    font-size:13.8px;
+    color:#51604F;
+  }
+
+  .note-box{
+    margin-top:50px;
+    background:#F0F3E6;
+    border-radius:10px;
+    padding:26px 28px;
+    font-size:13.5px;
+    color:#3A473C;
+    display:flex;
+    gap:16px;
+  }
+  .note-box .mark{
+    flex:none;
+    width:10px;height:10px;
+    background:var(--gold);
+    border-radius:50%;
+    margin-top:6px;
+  }
+
+  /* ===== CLOSING ===== */
+  .closing{
+    background:linear-gradient(160deg,#1E4536,#15302A 60%);
+    color:#F5F6F0;
+    text-align:center;
+    position:relative;
+    overflow:hidden;
+  }
+  .closing::before{
+    content:"";
+    position:absolute;
+    left:50%;top:50%;
+    width:600px;height:600px;
+    transform:translate(-50%,-50%);
+    background:radial-gradient(circle,rgba(143,191,77,.12),transparent 70%);
+  }
+  .closing .wrap{position:relative;}
+  .closing h2{
+    color:#F5F6F0;
+    font-size:clamp(22px,3.4vw,32px);
+    margin-bottom:20px;
+  }
+  .closing p{
+    color:#C5D1B8;
+    max-width:560px;
+    margin:0 auto 38px;
+    font-size:14.5px;
+  }
+  .cta-btn{
+    display:inline-block;
+    background:var(--accent-yg);
+    color:#15302A;
+    font-weight:700;
+    padding:16px 42px;
+    border-radius:999px;
+    text-decoration:none;
+    font-size:15px;
+    letter-spacing:.05em;
+    transition:transform .2s ease, background .2s ease;
+  }
+  .cta-btn:hover{
+    background:#A3D463;
+    transform:translateY(-2px);
+  }
+  .closing .sub-info{
+    margin-top:28px;
+    font-size:12.5px;
+    color:#8FA380;
+  }
+
+  footer{
+    background:#0F2219;
+    color:#6F8470;
+    text-align:center;
+    padding:22px 0;
+    font-size:12px;
+    letter-spacing:.08em;
+  }
+
+  @media (max-width:780px){
+    .understand-grid{grid-template-columns:1fr;}
+    .value-grid{grid-template-columns:1fr 1fr;}
+    .hero-mark{width:180px;height:180px;right:10px;bottom:-40px;opacity:.5;}
+    .timeline-item{grid-template-columns:1fr;gap:6px;}
+  }
+  @media (max-width:520px){
+    .value-grid{grid-template-columns:1fr;}
+    .logo-strip .wrap{flex-direction:column;align-items:flex-start;}
+    section{padding:60px 0;}
+    .hero{padding:70px 0 90px;}
+  }
+</style>
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-mark">
+    <div class="poly"></div>
+    <div class="poly2"></div>
+  </div>
+  <div class="wrap">
+    <div class="kairos-tag"><span class="dot"></span>Kairos Proposal — みより2026様へのご提案</div>
+    <h1>家を手放す人の記憶を、<br>静かに次へ引き継ぐ。<br>その姿勢を、<em>サイトとロゴ</em>に。</h1>
+    <p class="lead">
+      不動産の売買と、売却前の家財整理。ふたつの仕事に共通しているのは、
+      「誰かの暮らしの終わりに、丁寧に立ち会う」ということ。
+      その温度感を壊さず、既存の緑基調サイトとMYRロゴ候補を、
+      迷いなく最後まで仕上げます。
+    </p>
+    <div class="client-line">ご提案先：みより2026 様　／　HP修正（既存HTML4ページ活用）＋ロゴ仕上げ　／　税込10万円以内</div>
+  </div>
+</section>
+
+<section class="understand">
+  <div class="wrap">
+    <div class="section-label">UNDERSTANDING</div>
+    <h2 class="section-title">ご依頼内容、拝見しました。</h2>
+    <p class="section-sub">
+      募集文を読み込み、御社が本当に必要としているのは「作り直し」ではなく
+      「仕上げ」だと理解しています。
+    </p>
+    <div class="understand-grid">
+      <div class="understand-quote">
+        既存の9ページ・共通CSS・写真を活かしたまま、<br>
+        緑基調の落ち着いた世界観を、<br>
+        スマホでも崩れない形に整える。<br><br>
+        ロゴは新しく作るのではなく、<br>
+        MYR第一候補という「答え」を、<br>
+        最小サイズでも破綻しない精度まで磨く。
+      </div>
+      <ul class="understand-list">
+        <li><b>不動産売買と家財整理、ふたつの文脈を1つのトップページで整理</b>する必要があること</li>
+        <li>会社概要・免許情報など<b>事実確認済みの情報のみ掲載</b>し、未確認の実績は出さない誠実さを守ること</li>
+        <li>お問い合わせは<b>個人情報の案内を送信前に確認できる構成</b>が必須であること</li>
+        <li>フォームは<b>自動返信・二重送信対策・保存先と保持期間の明示</b>まで含めた実運用設計が必要なこと</li>
+        <li>ロゴは<b>コンペではなく、1案を丁寧に仕上げる</b>依頼であること</li>
+        <li>ご本人が窓口・主担当を担う、<b>再委託の有無を明確に答えられる体制</b>を求めていること</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-label">WHAT KAIROS BRINGS</div>
+    <h2 class="section-title">Kairosが提供できること</h2>
+    <p class="section-sub">予算・納期・既存資産、すべての制約を前提に、やり切れる範囲で確実に。</p>
+    <div class="value-grid">
+      <div class="value-card">
+        <span class="num">01</span>
+        <h3>既存HTMLの再構成＋スマホ最適化</h3>
+        <p>9ページ・共通CSS・写真資産を活かしながら、ヘッダー・余白・文字・ボタンをスマホ基準で調整。4ページ（トップ／会社概要／お問い合わせ／プライバシー）に整理します。</p>
+      </div>
+      <div class="value-card">
+        <span class="num">02</span>
+        <h3>実運用に耐えるお問い合わせフォーム</h3>
+        <p>管理者宛送信・自動返信・入力検証・二重送信や迷惑送信対策まで設計。送信方式・保存先・保持期間・利用料金は事前にご提案し、同意確認の導線も組み込みます。</p>
+      </div>
+      <div class="value-card">
+        <span class="num">03</span>
+        <h3>MYRロゴの仕上げとベクター化</h3>
+        <p>緑の幾何学マークと黄緑アクセントを保ったまま、細部・余白・小サイズ表示を調整。横組み／マーク単体／縦組み×カラー・黒・白抜きまで展開します。</p>
+      </div>
+      <div class="value-card">
+        <span class="num">04</span>
+        <h3>公開前の基本設定と実機確認</h3>
+        <p>タイトル・説明・canonical・SNS共有画像・favicon・サイトマップを整備。HTTPS公開後にPC・スマホ表示とメール実受信まで確認してから引き渡します。</p>
+      </div>
+      <div class="value-card">
+        <span class="num">05</span>
+        <h3>迷わない引き継ぎと明朗な体制</h3>
+        <p>全ソース・ロゴ元データ・設定一覧・更新手順を納品。商用利用・改変・第三者引継ぎ可能な形で、再委託の有無も契約前に明示します。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="logo-strip">
+  <div class="wrap">
+    <div class="logo-demo">
+      <div class="logo-chip c1"><div class="m"></div></div>
+      <div class="logo-chip c2"><div class="m"></div></div>
+      <div class="logo-chip c3"><div class="m"></div></div>
+      <div class="logo-chip c4"><div class="m"></div></div>
+    </div>
+    <div class="logo-strip-text">
+      <h3>MYRという「答え」を、どの背景でも崩れない形に。</h3>
+      <p>白背景・緑の地色・白抜き・黒1色。小サイズの名刺からヘッダーまで、同じ強度で見える状態までベクターで仕上げます。</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-label">FLOW &amp; SCHEDULE</div>
+    <h2 class="section-title">進め方｜着手から3〜4週間</h2>
+    <p class="section-sub">必要情報と原稿の確定後、以下の工程で進めます。希望変更はまとめて2回まで、仕様未達・不具合修正は別扱いで対応します。</p>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-week">Week 1</div>
+        <div class="timeline-body">
+          <h3>構成・方式の確定</h3>
+          <p>4ページの構成、フォーム方式（送信上限・保存先・保持期間・利用料金）、既存URLの扱いをすり合わせます。</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-week">Week 1-2</div>
+        <div class="timeline-body">
+          <h3>トップページとロゴの先行仕上げ</h3>
+          <p>最も情報量の多いトップページと、MYRロゴのベクター化・展開案を先に固め、全体トーンを確定します。</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-week">Week 2-3</div>
+        <div class="timeline-body">
+          <h3>全ページ反映</h3>
+          <p>会社概要・お問い合わせ・プライバシーページへ展開。フォームの自動返信・検証・対策を実装します。</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-week">Week 3</div>
+        <div class="timeline-body">
+          <h3>試験・実機確認</h3>
+          <p>PC・スマホでの表示確認、メール実受信テスト、基本SEO設定（canonical・SNS画像・favicon・サイトマップ）を行います。</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-week">Week 4</div>
+        <div class="timeline-body">
+          <h3>公開・引き継ぎ</h3>
+          <p>HTTPS公開後、全ソース・設定一覧・更新手順を納品。公開後14日間は仕様上の不具合修正に対応します。</p>
+        </div>
+      </div>
+    </div>
+    <div class="note-box">
+      <span class="mark"></span>
+      <div>
+        ドメイン・サーバー・フォーム等の実費（初年度想定10,000円以内）、更新費・保守の任意／必須区分、
+        追加作業の費用と納期は、着手前にすべて書面でご提示します。契約前の無償デザイン制作は行いません。
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="closing">
+  <div class="wrap">
+    <h2>見積もりと実績、まずはご確認ください。</h2>
+    <p>
+      HP・フォーム・公開・ロゴの一括対応、税込金額の内訳、再委託の有無、
+      着手可能日まで、ご質問いただいた項目すべてに回答いたします。
+      ご本人対応・個人事業主としての責任範囲も明確にご提示します。
+    </p>
+    <a href="#" class="cta-btn">Kairosに見積もりを相談する</a>
+    <div class="sub-info">本提案は相談・見積のご案内です。発注確定を前提としたものではありません。</div>
+  </div>
+</section>
+
+<footer>
+  Kairos — Web制作・システム開発チーム
+</footer>
+
+</body>
+</html>
